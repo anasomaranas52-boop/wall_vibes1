@@ -4,7 +4,7 @@
  */
 
 import { useState, useCallback, useMemo } from "react";
-import Header from "./components/Header";
+import Header from "./Header";
 import Hero from "./components/Hero";
 import ProductCard from "./components/ProductCard";
 import CartDrawer from "./components/CartDrawer";
