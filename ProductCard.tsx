@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Plus } from "lucide-react";
-import { Product } from "../types";
-import { PRICES } from "../constants";
+import { Product } from "./types";
+import { PRICES } from "./constants";
 
 interface ProductCardProps {
   product: Product;
