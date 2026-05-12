@@ -157,16 +157,14 @@ export default function App() {
                 <h2 className="text-2xl md:text-3xl font-black">
                   {cat.icon} {cat.name}
                 </h2>
-              </div>
-
-              className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10"
-                {PRODUCTS.filter(p => p.category === cat.id).map((product) => (
-                  <ProductCard 
-                    key={product.id} 
-                    product={product} 
-                    onClick={setSelectedProduct}
-                    onAddToCart={(p) => setSelectedProduct(p)} 
-                                  />
+                          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
+              {PRODUCTS.filter(p => p.category === cat.id).map((product) => (
+                <ProductCard
+                  key={product.id}
+                  product={product}
+                  onClick={setSelectedProduct}
+                  onAddToCart={(p) => setSelectedProduct(p)}
+                />
               ))}
             </div>
           </section>
