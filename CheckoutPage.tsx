@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Send, Truck, CreditCard, ShieldCheck, MapPin } from "lucide-react";
-import { CartItem } from "../types";
-import { SHIPPING_REGIONS } from "../constants";
+import { CartItem } from "./types";
+import { SHIPPING_REGIONS } from "./constants";
 import { useState } from "react";
 
 interface CheckoutPageProps {
