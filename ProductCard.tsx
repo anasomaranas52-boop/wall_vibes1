@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+i motion } from "motion/react";
 import { Plus } from "lucide-react";
 import { Product } from "./types";
 import { PRICES } from "./constants";
@@ -36,31 +36,33 @@ export default function ProductCard({ product, onClick, onAddToCart }: ProductCa
       </div>
 
       <div className="product-info flex flex-col gap-4">
-        <h3 className="product-name font-bold text-xl text-white/90 text-center line-clamp-1">
+        <h3 className="product-name font-bold text-base text-white/90 text-center line-clamp-1">
           {product.name}
         </h3>
         
-        <div className="grid grid-cols-1 gap-2">
-          {Object.entries(PRICES).map(([size, price]) => (
-            <div key={size} className="flex justify-between items-center bg-white/5 p-3 rounded-xl border border-white/5">
-              <span className="text-white/60 text-sm font-bold">مقاس {size.replace('x', '*')}:</span>
-              <div className="flex items-center gap-2">
-                <span className="text-primary font-black">{price.current} ج.م</span>
-                <span className="text-white/20 line-through text-[10px]">{price.original} ج.م</span>
-              </div>
-            </div>
-          ))}
+  <div className="flex flex-col gap-1.5">
+  {Object.entries(PRICES).map(([size, price]) => (
+    <div key={size} className="flex items-center justify-between bg-white/5 p-2 rounded-lg border border-white/5">
+      <span className="text-white/60 text-[10px]">مقاس {size.replace('x', '×')}:</span>
+      <div className="flex items-center gap-1.5">
+        <span className="text-primary font-bold text-xs">{price.current} ج.م</span>
+        <span className="text-white/20 line-through text-[9px]">{price.original} ج.م</span>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
 
         <div className="actions w-full flex gap-2 mt-2" onClick={(e) => e.stopPropagation()}>
           <button 
-            className="btn-order flex-[3] bg-primary-container hover:bg-primary text-black font-black py-4 rounded-xl transition-all shadow-lg shadow-primary/10 active:scale-95 text-base"
+            className="btn-order flex-[3] bg-primary-container hover:bg-primary text-black font-black py-2 rounded-xl transition-all shadow-lg shadow-primary/10 active:scale-95 text-base"
             onClick={() => onClick(product)}
           >
             تفاصيل المنتج
           </button>
           <button 
-            className="btn-cart flex-1 bg-white/5 hover:bg-white/10 text-white p-4 rounded-xl transition-colors flex items-center justify-center border border-white/5 shadow-inner"
+            className="btn-cart flex-1 bg-white/5 hover:bg-white/10 text-white p-2 rounded-xl transition-colors flex items-center justify-center border border-white/5 shadow-inner"
             onClick={() => onClick(product)}
           >
             <Plus size={20} />
