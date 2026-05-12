@@ -28,8 +28,7 @@ body {
   direction: rtl;
 }
 
-@layer base {
-  * {
-    @apply border-white/10;
-  }
+* {
+  border-color: rgb(255 255 255 / 0.1);
 }
+
