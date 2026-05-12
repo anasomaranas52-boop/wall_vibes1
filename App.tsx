@@ -213,6 +213,6 @@ export default function App() {
       />
 
       <WhatsAppButton />
-    </div>
+    </div/>
   );
 }
