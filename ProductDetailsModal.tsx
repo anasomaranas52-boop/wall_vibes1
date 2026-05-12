@@ -1,7 +1,7 @@
 import { motion, AnimatePresence } from "motion/react";
 import { X, Upload, ShoppingCart, Check } from "lucide-react";
 import { Product, ProductSize } from "./types";
-import { PRICES } from "../constants";
+import { PRICES } from "./constants";
 import { useState, useRef } from "react";
 
 interface ProductDetailsModalProps {
