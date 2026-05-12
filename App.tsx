@@ -6,11 +6,11 @@
 import { useState, useCallback, useMemo } from "react";
 import Header from "./Header";
 import Hero from "./Hero";
-import ProductCard from "./components/ProductCard";
-import CartDrawer from "./components/CartDrawer";
-import ProductDetailsModal from "./components/ProductDetailsModal";
-import CheckoutPage, { OrderDetails } from "./components/CheckoutPage";
-import WhatsAppButton from "./components/WhatsAppButton";
+import ProductCard from "./ProductCard";
+import CartDrawer from "./CartDrawer";
+import ProductDetailsModal from "./ProductDetailsModal";
+import CheckoutPage, { OrderDetails } from "./CheckoutPage";
+import WhatsAppButton from "./WhatsAppButton";
 import { PRODUCTS, PRICES } from "./constants";
 import { Product, CartItem, ProductSize } from "./types";
 import { AnimatePresence } from "motion/react";
