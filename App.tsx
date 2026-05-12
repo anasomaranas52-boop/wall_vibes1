@@ -121,7 +121,8 @@ export default function App() {
   }
 
   return (
-    className="min-h-screen bg-[#0a0a0a] text-white selection:bg-primary/30"
+    <div className="min-h-screen bg-[#0a0a0a] text-white selection:bg-primary/30">
+
       <Header onOpenCart={() => setIsCartOpen(true)} cartCount={cartCount} />
       
       <main>
