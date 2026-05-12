@@ -168,8 +168,8 @@ export default function App() {
                     onAddToCart={(p) => setSelectedProduct(p)} 
                   />
                 ))}
-              </div>
-            </section>
+              <div/>
+            <section/>
           ))}
         </div>
       </main>
@@ -213,6 +213,6 @@ export default function App() {
       />
 
       <WhatsAppButton />
-    </div/>
+    </div>
   );
 }
