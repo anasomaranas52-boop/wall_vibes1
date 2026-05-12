@@ -121,7 +121,7 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-white selection:bg-primary/30">
+    className="min-h-screen bg-[#0a0a0a] text-white selection:bg-primary/30"
       <Header onOpenCart={() => setIsCartOpen(true)} cartCount={cartCount} />
       
       <main>
@@ -158,7 +158,7 @@ export default function App() {
                 </h2>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+              className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10"
                 {PRODUCTS.filter(p => p.category === cat.id).map((product) => (
                   <ProductCard 
                     key={product.id} 
