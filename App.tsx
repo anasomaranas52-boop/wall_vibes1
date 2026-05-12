@@ -166,13 +166,14 @@ export default function App() {
                     product={product} 
                     onClick={setSelectedProduct}
                     onAddToCart={(p) => setSelectedProduct(p)} 
-                  />
-                ))}
-              <div/>
-            <section/>
-          ))}
-        </div>
-      </main>
+                                  />
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </main>
+
 
       <footer className="bg-black/40 border-t border-white/5 py-12 px-6 text-center">
         <div className="max-w-7xl mx-auto">
@@ -213,6 +214,6 @@ export default function App() {
       />
 
       <WhatsAppButton />
-    <div/>
+    </div>
   );
 }
